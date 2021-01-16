@@ -4,29 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Motorly</title>
+    <link rel="icon" href="img/favicon.svg"> 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/smarthphone.css">
 </head>
 <body>
     <header class="header"> 
         <div class="container"> 
             <a href="index.html" class="grid-4">
             <img src="img/motorly.svg" alt="Motorly">
+            <span class="mobile-btn"></span>
         </a>
-        <nav class="grid-12 header_menu">
+        <nav class="grid-12 header_menu mobile_menu">
             <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="#introduction">Home</a></li>
+                <li><a href="#options">About Us</a></li>
+                <li><a href="#contactus">Contact Us</a></li>
             </ul>
         </nav>
 
         </div>
     </header>
 
-    <section class="introduction"> 
+   <!-- Introduction -->
+
+    <section class="introduction" id="introduction"> 
         <div class="container">
             <h2> Car Scanner </h2>
             <blockquote>
@@ -61,11 +67,9 @@
             pile of other useful information, such as local offers, average price, 
             user reviews, etc</p>
 
-            <div class="appstore">
-                <img src="img/appstore.svg" alt="App Store">
-            </div>
-            <div class="googleplay">
-                <img src="img/googleplay.svg" alt="Google Play">
+            <div class="container">
+                <img src="img/appstore.svg" alt="App Store" id="appstore">
+                <img src="img/googleplay.svg" alt="Google Play" id="googleplay">
             </div>
         </section>
             </blockquote>
@@ -74,29 +78,16 @@
 
 <!-- Options -->
 
-<section class="container options">
+<section class="container options" id="options">
     <div class="container">
-    <img src="img/rectangle.svg" alt="Scan" id="retangle"> 
-
-        <img src="img/app.svg" alt="App" id="app">
+        
+  <img src="img/app.svg" alt="App" id="app">
 
         <img src="img/scan-app.svg" alt="Scan App" id="scan-app">
 
         <img src="img/plate-number.svg" alt="Plate Number" id="plate-number-img">
 
         <img src="img/happy-app.svg" alt="Happy App" id="happy-app">
-
-    <div class="container" id="text-app">
-        <p>Find the car you love <br> with a snap and have <br> fun while doing it</p> </div>
-
-    <div class="container" id="text-scan-app">
-        <p>Scan your license <br> plate and get all the <br> information</p> </div>
-
-    <div class="container" id="text-plate-number">
-        <p>Enter the license plate <br> number and identify <br> the make, model and <br> year of the vehicle</p> </div>
-
-    <div class="container" id="text-happy-app">
-        <p>Engaging and fun <br> way to discover and <br> shop motors</p> </div>
     </div>
 </section>
 
@@ -112,8 +103,6 @@
         
        <div class="container">
             <img src="img/appstore.svg" alt="App Store" id="app-store">
-      
-       
             <img src="img/googleplay.svg" alt="Google Play" id="google-play">
         </div>
     </section>
@@ -125,7 +114,7 @@
 
 <!-- Contact Us -->
 
-<section class="container contact">
+<section class="container contact" id="contactus">
     <h3>Contact Us</h3>
     <p>Engaging and fun way to discover <br>
         and shop motors in New Zealand</p>
@@ -135,34 +124,41 @@
         <fieldset class="container">
                     <input type="text" id="name" name="nome" value="Your name *">
                 <input type="text" id="email" name="email" value="Your email *">
-                <textarea rows="6" id="message" name="mes
-                
-                sage">Message *</textarea>
+                <textarea rows="6" id="message" name="message">Message *</textarea>
                 <button type="submit" id="subimit" name="submit">Submit</button>
         </fieldset>
     </form>
-    
+
+<!-- Close Contact Us -->
+
+<!-- Footer -->
              
 <section class="container footer">
-    <img src="img/motorly.svg" alt="Motorly">
-    <p>233 ohiro rd, Brooklyn, <br>
+    <div class="container"> 
+        <a href="index.html" class="grid-4">
+        <img src="img/motorly.svg" alt="Motorly">
+    </a>
+    <p id="adress">233 ohiro rd, Brooklyn, <br>
         Wellington, 6021
         </p>
         <div class="container">
-            <img src="img/instagram.svg" alt="Instagram" id="instagram">
-            <img src="img/twitter.svg" alt="Twitter" id="twitter">
-            <img src="img/reddit.svg" alt="Reddit" id="reddit">
-            <img src="img/facebook.svg" alt="facebook" id="facebook">
+            <a href="https://www.instagram.com/motorly.nz/" target="_blank"> 
+                <img src="img/instagram.svg" alt="Instagram" id="instagram"></a>
+            <a href="https://twitter.com/motorlyapp" target="_blank">
+                <img src="img/twitter.svg" alt="Twitter" id="twitter"></a>
+            <a href="https://www.reddit.com/r/motorly/" target="_blank">
+                <img src="img/reddit.svg" alt="Reddit" id="reddit"></a>
+            <a href="https://www.facebook.com/motorlyapp" target="_blank">
+                <img src="img/facebook.svg" alt="facebook" id="facebook"></a>
 
             <p id="terms">
                 Terms of Service &ensp;| &ensp; Privacy Policy
             </p> </div>
+        </section>
 
-<!-- Close Contact Us -->
 
-       
-</section>
-    
+<!-- Close Footer -->
+  
 
 </section>
 
